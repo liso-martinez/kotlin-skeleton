@@ -12,8 +12,19 @@ repositories {
     mavenCentral()
 }
 
+object Versions  {
+    const val kotlin = "1.7.21"
+    const val mockk = "1.13.2"
+    const val kotest = "5.5.4"
+}
+
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("io.mockk:mockk:${Versions.mockk}")
+    testImplementation("io.kotest:kotest-runner-junit5:${Versions.kotest}")
+    testImplementation("io.kotest:kotest-assertions-core:${Versions.kotest}")
+
+
 }
 
 tasks.test {
