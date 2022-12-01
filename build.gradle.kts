@@ -23,8 +23,6 @@ dependencies {
     testImplementation("io.mockk:mockk:${Versions.mockk}")
     testImplementation("io.kotest:kotest-runner-junit5:${Versions.kotest}")
     testImplementation("io.kotest:kotest-assertions-core:${Versions.kotest}")
-
-
 }
 
 tasks.test {
